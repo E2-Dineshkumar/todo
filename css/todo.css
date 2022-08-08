@@ -1,0 +1,180 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    font-family: 'ceraPro';
+    margin: 0;
+}
+@font-face {
+    font-family: 'ceraPro';
+    src: url('Cera\ Pro\ Black.otf');
+}
+*{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.entireContainer{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.entireContent{
+    height:80%;
+    width:80%;
+    border-radius:15px;
+    background:#474747;
+}
+.headingText{
+    height: 10%;
+    width: 100%;
+    color:#ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    background:#e8175d;
+}
+.container {
+    height: 90%;
+    width: 100%;
+    flex-direction: row;
+}
+.left{
+    width: 49.75%;
+    height: 100%;
+    background-color:#474747;
+}
+.formContainer{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    margin-block-end: 0 !important;
+    margin-top: 0 !important;
+}
+.errMsgDiv{
+    height: 5%;
+    width: 100%;
+}
+.submitBtnDiv{
+    height: 10%;
+    width: 100%;
+}
+.inputDetailsDiv{
+    height: 20%;
+    width: 100%;
+    flex-direction: column;
+}
+.nameInputTextDiv{
+    height: 50%;
+    width: 100%;
+}
+.nameLabelDiv{
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+}
+.deptInputTextDiv{
+    height: 50%;
+    width: 100%;
+}
+.deptLabelDiv{
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+}
+.labelHeaderDiv{
+    height: 10%;
+    width: 100%;
+    background-color: #363636;
+    color:#ffffff;
+    font-weight: bold;
+}
+.dummyDiv{
+    height: 55%;
+    width: 100%;
+    background-color:#474747;
+}
+.right{
+    width: 49.75%;
+    height: 100%;
+}
+.middle{
+    width: 0.5%;
+    height: 100%;
+    background: #ffffff;
+}
+.dataContainer{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.spanHeaderDiv{
+    height: 10%;
+    width: 100%;
+    color: #ffffff;
+    font-weight: bold;
+    background-color:#363636;
+}
+.postsDiv{
+    height: 90%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color:#474747;
+}
+.postContainer{
+    color: #ffffff;
+    width: 100%;
+    background:#cc527a;
+}
+.postContainerStatic{
+    color: #ffffff;
+    width: 100%;
+    background:#e8175d;
+
+}
+::placeholder{
+    color: #cc527a;
+}
+i {
+    cursor: pointer;
+}
+#posts div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#msg {
+    font-size: large;
+    font-weight: bold;
+    color: #cc527a;
+}
+input{
+   border: 0;
+   outline: 0;
+   padding: 5px;
+   border-radius: 5px;
+   background: #ffffff; 
+}
+button{
+    background: #e8175d;
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.material-symbols-outlined{
+    color: #ffffff;
+}
+
+/*
+theme2
+light grey #ffffff
+medium grey #474747
+darker grey #363636
+red #e8175d
+lighter red #cc527a
+*/
