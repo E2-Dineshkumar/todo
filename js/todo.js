@@ -1,3 +1,10 @@
+function openTheForm() {
+  document.getElementById("popContainer").style.display = "block";
+}
+
+function closeTheForm() {
+  document.getElementById("popContainer").style.display = "none";
+}
 let form = document.getElementById("form");
 let uInput = document.getElementById("nameInput");
 let deptInput=document.getElementById("deptInput");

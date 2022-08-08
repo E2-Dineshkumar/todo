@@ -4,6 +4,7 @@ html,body {
     font-family: 'ceraPro';
     margin: 0;
     user-select: none;
+    background: #363636;
 }
 @font-face {
     font-family: 'ceraPro';
@@ -19,17 +20,6 @@ html,body {
     justify-content: center;
     align-content: center;
 }
-.entireContainer{
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-}
-/*.entireContent{
-    height:80%;
-    width:80%;
-    border-radius:15px;
-    background:#474747;
-}*/
 .headingText{
     height: 10%;
     width: 100%;
@@ -37,11 +27,46 @@ html,body {
     font-size: 30px;
     font-weight: bold;
     background:#e8175d;
+    /*position: fixed;
+    top:0;*/
 }
+.entireContainer{
+    height: 90%;
+    width: 100%;
+    flex-direction: column;
+}
+/*.popupBtnDiv{
+    height: 10%;
+    width: 100%;
+    flex-direction: row;
+    background: #363636;
+}
+.openBtnDiv{
+    height: 100%;
+    width: 20%;
+}
+.closeBtnDiv{
+    height: 100%;
+    width: 20%;
+}
+.dummyBtnDiv{
+    height: 100%;
+    width: 60%;
+}
+.entireContent{
+    height:100%;
+    width:100%;
+    border-radius:15px;
+    background:#474747;
+}*/
 .container {
     height: 90%;
     width: 100%;
-    flex-direction: row;
+}
+.popContentDiv{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
 }
 .leftContainer{
     width: 49.75%;
@@ -198,9 +223,9 @@ button{
     background: #e8175d;
     color: #ffffff;
     border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
     outline: 0;
-    padding: 15px;
+    padding: 10px;
     cursor: pointer;
     font-weight: bold;
 }
