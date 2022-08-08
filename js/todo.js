@@ -1,7 +1,6 @@
 let form = document.getElementById("form");
 let uInput = document.getElementById("nameInput");
 let deptInput=document.getElementById("deptInput");
-let regInput=document.getElementById("regInput");
 let msg = document.getElementById("msg");
 let posts = document.getElementById("posts");
 form.addEventListener("submit", (e) => {
@@ -9,7 +8,7 @@ form.addEventListener("submit", (e) => {
     formValidation();
   });
   let formValidation = () => {
-    if (uInput.value === "" | deptInput.value === "" | regInput.value==="") {
+    if (uInput.value === "" | deptInput.value === "") {
       msg.innerHTML = "*Fields Cannot be Empty";
     } else {
         msg.innerHTML = "";
@@ -20,7 +19,6 @@ form.addEventListener("submit", (e) => {
   let acceptData = () => {
     data["username"] = uInput.value;
     data["department"]=deptInput.value;
-    data["reg"]=regInput.value;
     console.log(data);
     createFunc();
    };
@@ -32,7 +30,6 @@ form.addEventListener("submit", (e) => {
     <div class="postContainer">
         <p>${data.username}</p>
         <p>${data.department}</p>
-        <p>${data.reg}</p>
         <span class="options">
             <i onclick="editFunc(this)" class="material-symbols-outlined">edit_note</i>
             <i onclick="deleteFunc(this)" class="material-symbols-outlined">delete</i>
@@ -41,7 +38,6 @@ form.addEventListener("submit", (e) => {
     `;
     uInput.value = "";
     deptInput.value="";
-    regInput.value="";
     //msg.innerHTML = "*Added!";
   };
   let deleteFunc = (e) => {
@@ -49,10 +45,8 @@ form.addEventListener("submit", (e) => {
     //msg.innerHTML = "*Deleted!";
   };
   let editFunc = (e) => {
-    regInput.value=e.parentElement.previousElementSibling.innerHTML;
+    deptInput.value=e.parentElement.previousElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
-    deptInput.value = e.parentElement.previousElementSibling.previousElementSibling.innerHTML;
-    e.parentElement.parentElement.remove();
-    uInput.value = e.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML;
+    uInput.value = e.parentElement.previousElementSibling.previousElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
   };
