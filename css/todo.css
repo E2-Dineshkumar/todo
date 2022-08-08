@@ -3,6 +3,7 @@ html,body {
     width: 100%;
     font-family: 'ceraPro';
     margin: 0;
+    user-select: none;
 }
 @font-face {
     font-family: 'ceraPro';

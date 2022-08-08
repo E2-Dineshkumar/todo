@@ -38,9 +38,11 @@ form.addEventListener("submit", (e) => {
     `;
     uInput.value = "";
     deptInput.value="";
+    //msg.innerHTML = "*Added!";
   };
   let deleteFunc = (e) => {
     e.parentElement.parentElement.remove();
+    //msg.innerHTML = "*Deleted!";
   };
   let editFunc = (e) => {
     deptInput.value = e.parentElement.previousElementSibling.innerHTML;
