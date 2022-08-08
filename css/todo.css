@@ -8,6 +8,10 @@ html,body {
     font-family: 'ceraPro';
     src: url('Cera\ Pro\ Black.otf');
 }
+@font-face {
+    font-family: 'ceraLight';
+    src: url('Cera\ Pro\ Light.otf');
+}
 *{
     display: flex;
     flex-wrap: wrap;
@@ -134,6 +138,7 @@ html,body {
 }
 ::placeholder{
     color: #cc527a;
+    font-weight: bold;
 }
 i {
     cursor: pointer;
@@ -154,7 +159,10 @@ input{
    outline: 0;
    padding: 5px;
    border-radius: 5px;
-   background: #ffffff; 
+   background: #ffffff;
+   color: #cc527a;
+   font-family: 'ceraLight';
+   font-weight: bold;
 }
 button{
     background: #e8175d;
