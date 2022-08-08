@@ -1,19 +1,16 @@
 <html>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="../css/todo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <body>
         <div class="entireContainer">
             <div class="headingText">
                 <span> Student Details </span>
             </div>
             <div class="container">
-                <div class="left">
+                <div class="leftContainer">
                     <form id="form" class="formContainer">
                         <div class="labelHeaderDiv">
-                            <span for="username"> Student Details Form </span>
+                            <span> Student Details Form </span>
                         </div>
                         <div class="inputDetailsDiv">
                             <div class="nameInputTextDiv">
@@ -32,6 +29,14 @@
                                     <input name="department" id="deptInput" placeholder="Enter Dept">
                                 </div>                                
                             </div>
+                            <div class="regInputTextDiv">
+                                <div class="regLabelDiv">
+                                    <label>Register Number</label>
+                                </div>
+                                <div class="regInputDiv">
+                                    <input name="registerNo" id="regInput" placeholder="Enter Register No">
+                                </div>                                
+                            </div>
                         </div>
                         <div id="msg" class="errMsgDiv"></div>
                         <div class="submitBtnDiv">
@@ -40,8 +45,8 @@
                         <div class="dummyDiv"></div>
                     </form>
                 </div>
-                <div class="middle"></div>
-                <div class="right">
+                <div class="middleContainer"></div>
+                <div class="rightContainer">
                     <div class="dataContainer">
                         <div class="spanHeaderDiv">
                             <span> Students Detail List </span>
@@ -50,6 +55,7 @@
                             <div class="postContainerStatic">
                                 <p>Student Name</p>
                                 <p>Student Dept</p>
+                                <p>Reg.no</p>
                                 <span class="options">
                                     <span class="material-symbols-outlined">edit_note</span>
                                     <span class="material-symbols-outlined">delete</span>

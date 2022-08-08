@@ -24,12 +24,12 @@ html,body {
     width: 100%;
     flex-direction: column;
 }
-.entireContent{
+/*.entireContent{
     height:80%;
     width:80%;
     border-radius:15px;
     background:#474747;
-}
+}*/
 .headingText{
     height: 10%;
     width: 100%;
@@ -43,7 +43,7 @@ html,body {
     width: 100%;
     flex-direction: row;
 }
-.left{
+.leftContainer{
     width: 49.75%;
     height: 100%;
     background-color:#474747;
@@ -64,27 +64,94 @@ html,body {
     width: 100%;
 }
 .inputDetailsDiv{
-    height: 20%;
+    height: 30%;
     width: 100%;
     flex-direction: column;
 }
 .nameInputTextDiv{
-    height: 50%;
+    height: 33.33%;
     width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .nameLabelDiv{
+    width: 30%;
+    height: 100%;
+    justify-content: space-evenly;
     color: #ffffff;
     font-weight: bold;
-    margin: 0 5px 0 0;
+}
+.nameInputDiv{
+    width: 70%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.nameInputDiv>input{
+    width: 90%;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #cc527a;
+    font-family: 'ceraLight';
+    font-weight: bold;
 }
 .deptInputTextDiv{
-    height: 50%;
+    height: 33.33%;
     width: 100%;
+    justify-content: space-evenly;
 }
 .deptLabelDiv{
+    width: 30%;
+    height: 100%;
+    justify-content: space-evenly;
     color: #ffffff;
     font-weight: bold;
-    margin: 0 5px 0 0;
+}
+.deptInputDiv{
+    width: 70%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.deptInputDiv>input{
+    width: 90%;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #cc527a;
+    font-family: 'ceraLight';
+    font-weight: bold;
+}
+.regInputTextDiv{
+    height: 33.33%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.regLabelDiv{
+    width: 30%;
+    height: 100%;
+    justify-content: space-evenly;
+    color: #ffffff;
+    font-weight: bold;
+}
+.regInputDiv{
+    width: 70%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.regInputDiv>input{
+    width: 90%;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #cc527a;
+    font-family: 'ceraLight';
+    font-weight: bold;
 }
 .labelHeaderDiv{
     height: 10%;
@@ -94,15 +161,15 @@ html,body {
     font-weight: bold;
 }
 .dummyDiv{
-    height: 55%;
+    height: 45%;
     width: 100%;
     background-color:#474747;
 }
-.right{
+.rightContainer{
     width: 49.75%;
     height: 100%;
 }
-.middle{
+.middleContainer{
     width: 0.5%;
     height: 100%;
     background: #ffffff;
@@ -154,16 +221,6 @@ i {
     font-size: large;
     font-weight: bold;
     color: #cc527a;
-}
-input{
-   border: 0;
-   outline: 0;
-   padding: 5px;
-   border-radius: 5px;
-   background: #ffffff;
-   color: #cc527a;
-   font-family: 'ceraLight';
-   font-weight: bold;
 }
 button{
     background: #e8175d;
