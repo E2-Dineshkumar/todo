@@ -12,6 +12,7 @@ form.addEventListener("submit", (e) => {
       msg.innerHTML = "*Fields Cannot be Empty";
     } else {
         msg.innerHTML = "";
+        //msg.innerHTML="Added!";
         acceptData();
     }
   };
@@ -42,6 +43,7 @@ form.addEventListener("submit", (e) => {
   };
   let deleteFunc = (e) => {
     e.parentElement.parentElement.remove();
+    //alert('Deleted!');
     //msg.innerHTML = "*Deleted!";
   };
   let editFunc = (e) => {
@@ -51,7 +53,7 @@ form.addEventListener("submit", (e) => {
     e.parentElement.parentElement.remove();
   };
   function openTheForm() {
-    document.getElementById("popContainer").style.display = "block";
+    document.getElementById("popContainer").style.display = "flex";
   }
   function closeTheForm() {
     document.getElementById("popContainer").style.display = "none";
