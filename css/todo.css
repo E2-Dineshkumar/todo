@@ -4,7 +4,7 @@ html,body {
     font-family: 'ceraPro';
     margin: 0;
     user-select: none;
-    background: #363636;
+    background: #386150;
 }
 @font-face {
     font-family: 'ceraPro';
@@ -26,7 +26,7 @@ html,body {
     color:#ffffff;
     font-size: 30px;
     font-weight: bold;
-    background:#e8175d;
+    background:#58B09C;
     flex-direction: row;
     /*position: fixed;
     top:0;*/
@@ -52,7 +52,7 @@ html,body {
     height: 10%;
     width: 100%;
     flex-direction: row;
-    background: #363636;
+    background: #386150;
 }
 .openBtnDiv{
     height: 100%;
@@ -70,7 +70,7 @@ html,body {
     height:100%;
     width:100%;
     border-radius:15px;
-    background:#474747;
+    background:#CAF7E2;
 }*/
 .container {
     height: 90%;
@@ -84,7 +84,7 @@ html,body {
 .leftContainer{
     width: 49.75%;
     height: 100%;
-    background-color:#474747;
+    background-color:#CAF7E2;
 }
 .formContainer{
     height: 100%;
@@ -116,7 +116,7 @@ html,body {
     width: 30%;
     height: 100%;
     justify-content: space-evenly;
-    color: #ffffff;
+    color: #58B09C;
     font-weight: bold;
 }
 .nameInputDiv{
@@ -131,7 +131,7 @@ html,body {
     outline: 0;
     border-radius: 5px;
     background: #ffffff;
-    color: #cc527a;
+    color: #58B09C;
     font-family: 'ceraLight';
     font-weight: bold;
 }
@@ -144,7 +144,7 @@ html,body {
     width: 30%;
     height: 100%;
     justify-content: space-evenly;
-    color: #ffffff;
+    color: #58B09C;
     font-weight: bold;
 }
 .deptInputDiv{
@@ -159,21 +159,21 @@ html,body {
     outline: 0;
     border-radius: 5px;
     background: #ffffff;
-    color: #cc527a;
+    color: #58B09C;
     font-family: 'ceraLight';
     font-weight: bold;
 }
 .labelHeaderDiv{
     height: 10%;
     width: 100%;
-    background-color: #363636;
+    background-color: #386150;
     color:#ffffff;
     font-weight: bold;
 }
 .dummyDiv{
     height: 45%;
     width: 100%;
-    background-color:#474747;
+    background-color:#CAF7E2;
 }
 .rightContainer{
     width: 49.75%;
@@ -194,28 +194,28 @@ html,body {
     width: 100%;
     color: #ffffff;
     font-weight: bold;
-    background-color:#363636;
+    background-color:#386150;
 }
 .postsDiv{
     height: 90%;
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
-    background-color:#474747;
+    background-color:#CAF7E2;
 }
 .postContainer{
     color: #ffffff;
     width: 100%;
-    background:#cc527a;
+    background:#6cd8bf;
 }
 .postContainerStatic{
     color: #ffffff;
     width: 100%;
-    background:#e8175d;
+    background:#58B09C;
 
 }
 ::placeholder{
-    color: #cc527a;
+    color: #58B09C;
     font-weight: bold;
 }
 i {
@@ -230,10 +230,10 @@ i {
 #msg {
     font-size: large;
     font-weight: bold;
-    color: #cc527a;
+    color: #58B09C;
 }
 button{
-    background: #e8175d;
+    background: #58B09C;
     color: #ffffff;
     border: 0;
     border-radius: 10px;
@@ -249,8 +249,16 @@ button{
 /*
 theme2
 light grey #ffffff
-medium grey #474747
-darker grey #363636
+medium grey #CAF7E2
+darker grey #386150
 red #e8175d
-lighter red #cc527a
+lighter red #58B09C
+*/
+
+/* theme 2
+light green #CAF7E2
+medium green #58B09C
+dark green #386150
+light greenish grey #4A442D
+dark greenish Grey #3D3522
 */
