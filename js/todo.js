@@ -1,10 +1,3 @@
-function openTheForm() {
-  document.getElementById("popContainer").style.display = "block";
-}
-
-function closeTheForm() {
-  document.getElementById("popContainer").style.display = "none";
-}
 let form = document.getElementById("form");
 let uInput = document.getElementById("nameInput");
 let deptInput=document.getElementById("deptInput");
@@ -57,3 +50,9 @@ form.addEventListener("submit", (e) => {
     uInput.value = e.parentElement.previousElementSibling.previousElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
   };
+  function openTheForm() {
+    document.getElementById("popContainer").style.display = "block";
+  }
+  function closeTheForm() {
+    document.getElementById("popContainer").style.display = "none";
+  }
