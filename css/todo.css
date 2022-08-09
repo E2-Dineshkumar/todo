@@ -27,8 +27,21 @@ html,body {
     font-size: 30px;
     font-weight: bold;
     background:#e8175d;
+    flex-direction: row;
     /*position: fixed;
     top:0;*/
+}
+.openBtnDiv{
+    width: 20%;
+    height: 100%;
+}
+.headingText>span{
+    width: 60%;
+    height: 100%;
+}
+.closeBtnDiv{
+    width: 20%;
+    height: 100%;
 }
 .entireContainer{
     height: 90%;
