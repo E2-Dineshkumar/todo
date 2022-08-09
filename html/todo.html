@@ -1,19 +1,22 @@
 <html>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="../css/todo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <body>
-        <div class="entireContainer">
-            <div class="headingText">
-                <span> Student Details </span>
+        <div class="headingText">
+            <div class="openBtnDiv">
+                <button type="button" onclick="openTheForm()">Open Form</button>
             </div>
-            <div class="container">
-                <div class="left">
+            <span> Student Details </span>
+            <div class="closeBtnDiv">
+                <button type="button" onclick="closeTheForm()">Close Form</button>
+            </div>
+        </div>
+        <div class="entireContainer" id="popContainer">
+            <div class="popContentDiv" >
+                <div class="leftContainer">
                     <form id="form" class="formContainer">
                         <div class="labelHeaderDiv">
-                            <span for="username"> Student Details Form </span>
+                            <span> Student Details Form </span>
                         </div>
                         <div class="inputDetailsDiv">
                             <div class="nameInputTextDiv">
@@ -40,8 +43,8 @@
                         <div class="dummyDiv"></div>
                     </form>
                 </div>
-                <div class="middle"></div>
-                <div class="right">
+                <div class="middleContainer"></div>
+                <div class="rightContainer">
                     <div class="dataContainer">
                         <div class="spanHeaderDiv">
                             <span> Students Detail List </span>
@@ -66,8 +69,8 @@
                         </div>
                     </div>
                 </div>
-            </div>    
-        </div>
+            </div>
+        </div>    
     </body>
     <script src="../js/todo.js"></script>
 </html>

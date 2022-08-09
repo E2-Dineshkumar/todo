@@ -1,3 +1,10 @@
+function openTheForm() {
+  document.getElementById("popContainer").style.display = "block";
+}
+
+function closeTheForm() {
+  document.getElementById("popContainer").style.display = "none";
+}
 let form = document.getElementById("form");
 let uInput = document.getElementById("nameInput");
 let deptInput=document.getElementById("deptInput");
@@ -38,12 +45,14 @@ form.addEventListener("submit", (e) => {
     `;
     uInput.value = "";
     deptInput.value="";
+    //msg.innerHTML = "*Added!";
   };
   let deleteFunc = (e) => {
     e.parentElement.parentElement.remove();
+    //msg.innerHTML = "*Deleted!";
   };
   let editFunc = (e) => {
-    deptInput.value = e.parentElement.previousElementSibling.innerHTML;
+    deptInput.value=e.parentElement.previousElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
     uInput.value = e.parentElement.previousElementSibling.previousElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
