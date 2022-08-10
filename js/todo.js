@@ -20,6 +20,7 @@ form.addEventListener("submit", (e) => {
   let acceptData = () => {
     data["username"] = uInput.value;
     data["department"]=deptInput.value;
+    localStorage.setItem("data",JSON.stringify(data))
     console.log(data);
     createFunc();
    };
@@ -43,12 +44,15 @@ form.addEventListener("submit", (e) => {
   };
   let deleteFunc = (e) => {
     e.parentElement.parentElement.remove();
+    //localStorage.removeItem("data")
     //alert('Deleted!');
     //msg.innerHTML = "*Deleted!";
   };
   let editFunc = (e) => {
+    //deptInput.value=json.parse(localStorage.getItem("data"))
     deptInput.value=e.parentElement.previousElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
+    //uInput.value=json.parse(localStorage.getItem("data"))
     uInput.value = e.parentElement.previousElementSibling.previousElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
   };
