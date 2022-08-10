@@ -20,6 +20,7 @@ form.addEventListener("submit", (e) => {
   let acceptData = () => {
     data["username"] = uInput.value;
     data["department"]=deptInput.value;
+    localStorage.setItem("data",JSON.stringify(data))
     console.log(data);
     createFunc();
    };
