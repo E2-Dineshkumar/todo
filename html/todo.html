@@ -3,17 +3,17 @@
     <link rel="stylesheet" href="../css/todo.css">
     <body>
         <div class="headingText">
-            <div class="openBtnDiv">
+            <!--div class="openBtnDiv">
                 <button type="button" onclick="openTheForm()"><span class="material-symbols-outlined">menu</span></button>
-            </div>
+            </div-->
             <span> Student Details </span>
-            <div class="closeBtnDiv">
+            <!--div class="closeBtnDiv">
                 <button type="button" onclick="closeTheForm()"><span class="material-symbols-outlined">close</span></button>
-            </div>
+            </div-->
         </div>
         <div class="entireContainer" >
             <div class="popContentDiv" id="popContainer">
-                <div class="leftContainer">
+                <div class="leftContainer" id="leftContainer">
                     <form id="form" class="formContainer">
                         <div class="labelHeaderDiv">
                             <span> Student Details Form </span>
@@ -24,7 +24,7 @@
                                     <label>Student Name</label>
                                 </div>
                                 <div class="nameInputDiv">
-                                    <input name="username" id="nameInput" autocomplete="off" placeholder="Enter Username">
+                                    <input name="username" id="nameInput" autocomplete="off" placeholder="Enter Username" maxlength="12">
                                 </div>                                
                             </div>
                             <div class="deptInputTextDiv">
@@ -32,32 +32,53 @@
                                     <label>Department</label>
                                 </div>
                                 <div class="deptInputDiv">
-                                    <input name="department" id="deptInput" autocomplete="off" placeholder="Enter Dept">
+                                    <input name="department" id="deptInput" autocomplete="off" placeholder="Enter Dept" maxlength="6">
                                 </div>                                
                             </div>
                         </div>
                         <div id="msg" class="errMsgDiv"></div>
                         <div class="submitBtnDiv">
-                            <button type="submit">Submit</button>
+                            <button type="submit" onclick="closeTheForm()">Submit</button>
+                            <button type="button" onclick="closeTheForm()"><span class="material-symbols-outlined">close</span></button>
                         </div>
-                        <div class="dummyDiv"></div>
+                        <!--div class="closeBtnDiv">
+                            <button type="button" onclick="closeTheForm()"><span class="material-symbols-outlined">close</span></button>
+                        </div-->
+                        <!--div class="dummyDiv"></div-->
                     </form>
                 </div>
-                <div class="middleContainer"></div>
+                <div class="delPopupDiv" id="delPopupDiv">
+                    <div class="delpopHeader">
+                        <span>Are you sure?</span>
+                    </div>
+                    <div class="delpopMsg">
+                        <span>To Delete this Form Details</span>
+                    </div>
+                    <div class="delpopBtn">
+                        <button id="yesBtn" onclick="closeDelForm()">Yes</button>
+                        <button id="noBtn" onclick="closeDelForm()">No</button>
+                    </div>
+                </div>
+                <!--div class="middleContainer"></div-->
                 <div class="rightContainer">
                     <div class="dataContainer">
                         <div class="spanHeaderDiv">
+                            <div class="openBtnDiv">
+                                <button type="button" onclick="openTheForm()"><span>Add Task</span></button>
+                            </div>
                             <span> Students Detail List </span>
                         </div>
                         <div id="posts" class="postsDiv">
                             <div class="postContainerStatic">
                                 <p>Student Name</p>
                                 <p>Student Dept</p>
-                                <span class="options">
+                                <p>Actions</p>
+                                <!--span class="options">
                                     <span class="material-symbols-outlined">edit_note</span>
                                     <span class="material-symbols-outlined">delete</span>
-                                </span>
+                                </span-->
                             </div>
+                            <div id="postContainer" class="postContainer"></div>
                             <!--div class="postContainer">
                                 <p>Student Name</p>
                                 <p>Student Dept</p>
