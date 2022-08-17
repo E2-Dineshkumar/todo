@@ -48,30 +48,6 @@ html,body {
     width: 100%;
     flex-direction: column;
 }
-/*.popupBtnDiv{
-    height: 10%;
-    width: 100%;
-    flex-direction: row;
-    background: #386150;
-}
-.openBtnDiv{
-    height: 100%;
-    width: 20%;
-}
-.closeBtnDiv{
-    height: 100%;
-    width: 20%;
-}
-.dummyBtnDiv{
-    height: 100%;
-    width: 60%;
-}
-.entireContent{
-    height:100%;
-    width:100%;
-    border-radius:15px;
-    background:#CAF7E2;
-}*/
 .container {
     height: 90%;
     width: 100%;
@@ -79,12 +55,29 @@ html,body {
 .popContentDiv{
     height: 100%;
     width: 100%;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 .leftContainer{
-    width: 49.75%;
-    height: 100%;
-    background-color:#CAF7E2;
+    /*width: 49.75%;
+    height: 100%;*/
+    height:50%;
+    width: 50%;
+    display: none;
+    z-index: 100;
+    border-radius: 10px;
+    background-color:#386150;
+}
+.delPopupDiv{
+    height:50%;
+    width: 50%;
+    /* color: #ffffff;
+    font-weight: bold; */
+    display: none;
+    z-index: 100;
+    border-radius: 10px;
+    background-color:#386150;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .formContainer{
     height: 100%;
@@ -92,23 +85,20 @@ html,body {
     flex-direction: column;
     margin-block-end: 0 !important;
     margin-top: 0 !important;
+    justify-content: space-evenly;
 }
 .errMsgDiv{
     height: 5%;
-    width: 100%;
 }
 .submitBtnDiv{
     height: 10%;
-    width: 100%;
 }
 .inputDetailsDiv{
     height: 30%;
-    width: 100%;
     flex-direction: column;
 }
 .nameInputTextDiv{
     height: 50%;
-    width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
 }
@@ -165,7 +155,6 @@ html,body {
 }
 .labelHeaderDiv{
     height: 10%;
-    width: 100%;
     background-color: #386150;
     color:#ffffff;
     font-weight: bold;
@@ -176,8 +165,9 @@ html,body {
     background-color:#CAF7E2;
 }
 .rightContainer{
-    width: 49.75%;
+    width: 100%;
     height: 100%;
+    position: fixed;
 }
 .middleContainer{
     width: 0.5%;
