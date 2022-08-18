@@ -4,7 +4,7 @@ html,body {
     font-family: 'ceraPro';
     margin: 0;
     user-select: none;
-    background: #386150;
+    background: #252A34;
 }
 @font-face {
     font-family: 'ceraPro';
@@ -26,7 +26,7 @@ html,body {
     color:#ffffff;
     font-size: 30px;
     font-weight: bold;
-    background:#58B09C;
+    background:#FF2E63;
     flex-direction: row;
     /*position: fixed;
     top:0;*/
@@ -61,20 +61,21 @@ html,body {
     /*width: 49.75%;
     height: 100%;*/
     height:50%;
-    width: 50%;
+    width: 40%;
     display: none;
     z-index: 100;
     border-radius: 10px;
-    background-color:#386150;
+    background-color:#252A34;
 }
 .delPopupDiv{
     height:50%;
     width: 50%;
-    color: #ffffff;
+    /* color: #ffffff;
+    font-weight: bold; */
     display: none;
     z-index: 100;
     border-radius: 10px;
-    background-color:#386150;
+    background-color:#252A34;
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -91,6 +92,7 @@ html,body {
 }
 .submitBtnDiv{
     height: 10%;
+    justify-content: space-evenly;
 }
 .inputDetailsDiv{
     height: 30%;
@@ -105,7 +107,7 @@ html,body {
     width: 30%;
     height: 100%;
     justify-content: space-evenly;
-    color: #58B09C;
+    color: #FF2E63;
     font-weight: bold;
 }
 .nameInputDiv{
@@ -120,7 +122,7 @@ html,body {
     outline: 0;
     border-radius: 5px;
     background: #ffffff;
-    color: #58B09C;
+    color: #FF2E63;
     font-family: 'ceraLight';
     font-weight: bold;
 }
@@ -133,7 +135,7 @@ html,body {
     width: 30%;
     height: 100%;
     justify-content: space-evenly;
-    color: #58B09C;
+    color: #FF2E63;
     font-weight: bold;
 }
 .deptInputDiv{
@@ -148,21 +150,21 @@ html,body {
     outline: 0;
     border-radius: 5px;
     background: #ffffff;
-    color: #58B09C;
+    color: #FF2E63;
     font-family: 'ceraLight';
     font-weight: bold;
 }
 .labelHeaderDiv{
     height: 10%;
-    background-color: #386150;
+    background-color: #252A34;
     color:#ffffff;
     font-weight: bold;
 }
-.dummyDiv{
+/*.dummyDiv{
     height: 45%;
     width: 100%;
     background-color:#CAF7E2;
-}
+}*/
 .rightContainer{
     width: 100%;
     height: 100%;
@@ -171,7 +173,7 @@ html,body {
 .middleContainer{
     width: 0.5%;
     height: 100%;
-    background: #58B09C;
+    background: #FF2E63;
 }
 .dataContainer{
     height: 100%;
@@ -183,28 +185,28 @@ html,body {
     width: 100%;
     color: #ffffff;
     font-weight: bold;
-    background-color:#386150;
+    background-color:#252A34;
 }
 .postsDiv{
     height: 90%;
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
-    background-color:#CAF7E2;
+    background-color:#EAEAEA;
 }
 .postContainer{
     color: #ffffff;
     width: 100%;
-    background:#6cd8bf;
+    background:#252A34;
 }
 .postContainerStatic{
     color: #ffffff;
     width: 100%;
-    background:#58B09C;
+    background:#FF2E63;
 
 }
 ::placeholder{
-    color: #58B09C;
+    color: #FF2E63;
     font-weight: bold;
 }
 i {
@@ -219,10 +221,10 @@ i {
 #msg {
     font-size: large;
     font-weight: bold;
-    color: #58B09C;
+    color: #FF2E63;
 }
 button{
-    background: #58B09C;
+    background: #08D9D6;
     color: #ffffff;
     border: 0;
     border-radius: 10px;
@@ -239,15 +241,22 @@ button{
 theme2
 light grey #ffffff
 medium grey #CAF7E2
-darker grey #386150
+darker grey #252A34
 red #e8175d
-lighter red #58B09C
+lighter red #FF2E63
 */
 
 /* theme 2
 light green #CAF7E2
-medium green #58B09C
-dark green #386150
+medium green #FF2E63
+dark green #252A34
 light greenish grey #4A442D
 dark greenish Grey #3D3522
+*/
+
+/*
+light blue #08D9D6
+darkcolor #252A34
+red pink #FF2E63
+white bg #EAEAEA
 */
