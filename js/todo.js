@@ -56,29 +56,35 @@ let posts = document.getElementById("posts");
     //msg.innerHTML = "*Added!";
   //};
   let deleteFunc = (e) => {
-   e.parentElement.parentElement.remove();
-   data.splice(e.parentElement.parentElement.id, 1);
-   localStorage.setItem("data", JSON.stringify(data));
-    // if(yes button clicked means delete this){
-      // func
-    // } else{
-    //   dont del this
-    // }
-    // var ans =confirm("Are you Sure to delete this Data?")
-    // if (ans===true){
-    //   e.parentElement.parentElement.remove();
-    //   data.splice(e.parentElement.parentElement.id, 1);
-    //   localStorage.setItem("data", JSON.stringify(data));  
-    // }else{null}
+  //  e.parentElement.parentElement.remove();
+  //  data.splice(e.parentElement.parentElement.id, 1);
+  //  localStorage.setItem("data", JSON.stringify(data));
+    var ans =confirm("Are you Sure to delete this Data?")
+    if (ans===true){
+      e.parentElement.parentElement.remove();
+      data.splice(e.parentElement.parentElement.id, 1);
+      localStorage.setItem("data", JSON.stringify(data));  
+    }else{null}
     //localStorage.removeItem("data")
     //alert('Deleted!');
     //msg.innerHTML = "*Deleted!";
   };
   let editFunc = (e) => {
-    let selectedTask = e.parentElement.parentElement;
-    uInput.value=selectedTask.children[0].innerHTML;
-    deptInput.value=selectedTask.children[1].innerHTML;
-    deleteFunc(e);
+    var edit=confirm("Do you want to Edit this data?")
+    if (edit===true){
+      e.parentElement.parentElement.remove();
+      data.splice(e.parentElement.parentElement.id, 1);
+      let selectedTask = e.parentElement.parentElement;
+      uInput.value=selectedTask.children[0].innerHTML;
+      deptInput.value=selectedTask.children[1].innerHTML;
+    }else{null}
+    //e.parentElement.parentElement.remove();
+    //postContainer.innerHTML="";
+    //deleteFunc();
+    // let selectedTask = e.parentElement.parentElement;
+    // uInput.value=selectedTask.children[0].innerHTML;
+    // deptInput.value=selectedTask.children[1].innerHTML;
+    // deleteFunc(e);
     //deptInput.value=json.parse(localStorage.getItem("data"))
     //deptInput.value=e.parentElement.previousElementSibling.innerHTML;
     //e.parentElement.parentElement.remove();
